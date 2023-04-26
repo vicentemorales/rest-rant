@@ -1,8 +1,24 @@
 h1 {
   text-align: center;
   color: cornflowerblue;
+  width: 100%;
 }
 
-body{
+section{
+  display: inline-block;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.row{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 30%;
   text-align: center;
 }
+
