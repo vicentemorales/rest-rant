@@ -22,3 +22,20 @@ main{
   text-align: center;
 }
 
+.dragon{
+  width: 250px;
+}
+
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  background-color: aquamarine;
+}
+
+button{
+  background-color: azure;
+}
