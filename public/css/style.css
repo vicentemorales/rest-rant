@@ -1,3 +1,7 @@
+* {
+  background-color: rgb(174, 247, 222);
+}
+
 h1 {
   text-align: center;
   color: cornflowerblue;
@@ -26,9 +30,7 @@ section{
   align-items: center;
 }
 
-* {
-  background-color: rgb(174, 247, 222);
-}
+
 
 button{
   background-color: azure;
@@ -50,3 +52,27 @@ button{
   margin-left: 25px;
 }
 
+nav {
+  background-color: cornflowerblue;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 25px;
+}
+
+nav a {
+  color: cornflowerblue;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  color: pink;
+  text-decoration: none;
+}

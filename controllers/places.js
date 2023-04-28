@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
 
   if (!req.body.pic) {
     // Default image if one is not provided
-    req.body.pic = 'http://placekitten.com/400/400'
+    req.body.pic = 'https://static.wikia.nocookie.net/spongebob/images/b/b9/Nasty_Patty_061.png'
   }
   if (!req.body.city) {
     req.body.city = 'Anytown'
