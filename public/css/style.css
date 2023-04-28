@@ -41,8 +41,10 @@ button{
   flex-direction: column;
   width: 75%;
   margin-bottom: 3px;
-  border-radius: 5px 5px 5px 5px;
+  
 }
+
+
 
 .newForm{
   margin-left: 25px;
