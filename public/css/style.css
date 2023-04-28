@@ -8,13 +8,7 @@ section{
   display: inline-block;
 }
 
-main{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-}
+
 .row{
   display: flex;
   flex-wrap: nowrap;
@@ -33,9 +27,24 @@ main{
 }
 
 * {
-  background-color: aquamarine;
+  background-color: rgb(174, 247, 222);
 }
 
 button{
   background-color: azure;
 }
+
+
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-bottom: 3px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.newForm{
+  margin-left: 25px;
+}
+
