@@ -76,3 +76,8 @@ nav a:hover {
   color: pink;
   text-decoration: none;
 }
+
+.editbutton{
+  color: rgb(174, 247, 222);
+  width: 10px;
+}
