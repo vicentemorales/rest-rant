@@ -14,7 +14,7 @@ function new_form () {
             Place Name
             </label>
             
-            <input className="form-group" id="name" name="name" required/>
+            <input className="form-control" id="name" name="name" required/>
             </div>
 
             {/*2*/}
@@ -23,7 +23,7 @@ function new_form () {
             Place Picture
             </label>
             
-            <input className="form-group" id="pic" name="pic"/>
+            <input className="form-control" id="pic" name="pic"/>
             </div>
 
             {/*3*/}
@@ -32,7 +32,7 @@ function new_form () {
             City
             </label>
             
-            <input className="form-group" id="city" name="city"/>
+            <input className="form-control" id="city" name="city"/>
             </div>
 
             {/*4*/}
@@ -41,7 +41,7 @@ function new_form () {
             State
             </label>
             
-            <input className="form-group" id="state" name="state"/>
+            <input className="form-control" id="state" name="state"/>
             </div>
 
             {/*5*/}
@@ -50,9 +50,19 @@ function new_form () {
             Cuisine
             </label>
             
-            <input className="form-group" id="cuisine" name="cuisine"/>
+            <input className="form-control" id="cuisine" name="cuisine"/>
             </div>
 
+            {/*7*/}
+            <div className="form-group">
+              <label for="founded">
+                Founded Year
+              </label>
+
+              <input className="form-control" id="founded" name="founded" />
+            </div>
+
+            <br />
             <input className="btn btn-primary" type="submit" value="Add Place" required/>
 
             </form>
