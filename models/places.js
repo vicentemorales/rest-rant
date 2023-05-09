@@ -2,12 +2,21 @@ const mongoose = require('mongoose')
 
 const placeSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  pic: String,
+  pic: {type: String, default: 'http://placekitten.com/350/350'},
   city: { type: String, default: 'Anytown' },
   state: { type: String, default: 'USA' },
   cuisines: { type: String, default: 'Food and Drink' },
-  founded: Number
+  founded: {
+    type: Number,
+    min: [1673, 'surely not...'],
+    max: [new Date().getFullYear(), 'Alrighty']
+
+  }
 })
+
+placeSchema.methods.showEstablished = function() {
+  return `${this.name} has been serving ${this.city}, ${this.state} since ${this.founded}.`
+}
 
 module.exports = mongoose.model('Place', placeSchema)
 

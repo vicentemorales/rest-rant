@@ -9,7 +9,7 @@ function new_form () {
             <form className="newForm" method="POST" action="/places">
             
             {/*1*/}
-            <div className="form-group">
+            <div className="form-group col-sm-4">
             <label htmlFor="name">
             Place Name
             </label>
@@ -18,7 +18,7 @@ function new_form () {
             </div>
 
             {/*2*/}
-            <div className="form-group">
+            <div className="form-group col-sm-4">
             <label htmlFor="pic">
             Place Picture
             </label>
@@ -27,7 +27,7 @@ function new_form () {
             </div>
 
             {/*3*/}
-            <div className="form-group">
+            <div className="form-group col-sm-4">
             <label htmlFor="city">
             City
             </label>
@@ -36,7 +36,7 @@ function new_form () {
             </div>
 
             {/*4*/}
-            <div className="form-group">
+            <div className="form-group col-sm-4">
             <label htmlFor="state">
             State
             </label>
@@ -45,7 +45,7 @@ function new_form () {
             </div>
 
             {/*5*/}
-            <div className="form-group">
+            <div className="form-group col-sm-4">
             <label htmlFor="cuisine">
             Cuisine
             </label>
@@ -54,12 +54,17 @@ function new_form () {
             </div>
 
             {/*7*/}
-            <div className="form-group">
+            <div className="form-group col-sm-4">
               <label for="founded">
                 Founded Year
               </label>
 
-              <input className="form-control" id="founded" name="founded" />
+              <input 
+              className="form-control" 
+              id="founded" 
+              name="founded"
+              type= "number"
+              value={new Date().getFullYear()} />
             </div>
 
             <br />
