@@ -81,3 +81,7 @@ nav a:hover {
   color: rgb(174, 247, 222);
   width: 10px;
 }
+
+hr{
+  width: 5000px;
+}

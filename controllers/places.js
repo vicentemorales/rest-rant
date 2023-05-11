@@ -1,6 +1,9 @@
 const router = require('express').Router()
 const db = require('../models')
 
+const Places = require('../models/places')
+
+
 router.get('/', (req, res) => {
     db.Place.find()
     .then((places) => {
@@ -32,6 +35,7 @@ router.get('/new', (req, res) => {
   res.render('places/new')
 })
 
+//show
 router.get('/:id', (req, res) => {
   db.Place.findById(req.params.id)
   .then(place => {
@@ -44,14 +48,32 @@ router.get('/:id', (req, res) => {
 })
 
 
-router.put('/:id', (req, res) => {
-  res.send('PUT /places/:id stub')
-})
-
+//delete
 router.delete('/:id', (req, res) => {
-  res.send('DELETE /places/:id stub')
+  db.Place.findByIdAndDelete(req.params.id)
+      .then(() => {
+          res.redirect('/places')
+      })
+      .catch(err => {
+          console.log('err', err)
+          res.render('error404')
+      })
 })
 
+
+
+/*
+router.delete('/:id', (req, res) => {
+  Places.findByIdAndDelete({_id: req.params.id}).then((deletedPlace) => {
+    console.log(deletedPlace)
+    res.status(303).redirect('/places')
+  })
+
+
+  res.send('DELETE /places/:id stub')
+
+})
+*/
 router.get('/:id/edit', (req, res) => {
   res.send('GET edit form stub')
 })
