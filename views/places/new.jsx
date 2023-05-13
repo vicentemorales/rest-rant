@@ -54,7 +54,7 @@ function new_form () {
             </div>
 
             {/*7*/}
-            <div className="">
+            <div className="" style={{ marginTop: '5px' }}>
               <label for="founded">
                 Founded Year
               </label>

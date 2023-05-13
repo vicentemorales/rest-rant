@@ -21,7 +21,7 @@ function index (data) {
   return (
     <Def>
         <main>
-            <h1>Rest-Rant: Places to rant and rave about</h1>
+            <h1>Rest-Rant: A place to rant and rave about</h1>
             
             <div className='px-4 py-5 my-5 text-center'>
               {placesFormatted}
