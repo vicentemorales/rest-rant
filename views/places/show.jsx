@@ -10,7 +10,24 @@ function show (data) {
       No Comments Yet!
     </h3>
   )
+  let rating = (
+    <h3 className="inactive">
+      Not yet rated
+    </h3>
+  )
+  if (data.place.comments.length) {
+    let sumRatings = data.place.comments.reduce((tot, c) => {
+      return tot + c.stars
+    }, 0)
+    let averageRating = sumRatings / data.place.comments.length
+    rating = (
+      <h3>
+        {averageRating} stars
+      </h3>
+    )
 
+  }
+  
   if (data.place.comments.length) {
     comments = data.place.comments.map(c => {
       return (
@@ -29,7 +46,7 @@ function show (data) {
           </h3>
 
           <h4>
-            Rating: {c.stars}/5
+            Rating: {c.stars}/5 🌟
           </h4>
 
           <form style={{marginBottom: '15px'}}method="POST" action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}>
