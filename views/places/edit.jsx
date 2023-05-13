@@ -8,50 +8,50 @@ function edit_form (data) {
             <h1>Edit Place</h1>
 
             <form method="POST" action={`/places/${data.id}?_method=PUT`}>
-            <div className="form-group">
+            <div className="">
                 {/*1*/}
-                <div className="form-group">
+                <div className="">
                 <label htmlFor="name">
                 Place Name
                 </label>
                 
-                <input className="form-group" id="name" name="name" required/>
+                <input className="" id="name" name="name" required/>
                 </div>
 
                 {/*2*/}
-                <div className="form-group">
+                <div className="">
                 <label htmlFor="pic">
                 Place Picture
                 </label>
                 
-                <input className="form-group" id="pic" name="pic"/>
+                <input className="" id="pic" name="pic"/>
                 </div>
 
                 {/*3*/}
-                <div className="form-group">
+                <div className="">
                 <label htmlFor="city">
                 City
                 </label>
                 
-                <input className="form-group" id="city" name="city"/>
+                <input className="" id="city" name="city"/>
                 </div>
 
                 {/*4*/}
-                <div className="form-group">
+                <div className="">
                 <label htmlFor="state">
                 State
                 </label>
                 
-                <input className="form-group" id="state" name="state"/>
+                <input className="" id="state" name="state"/>
                 </div>
 
                 {/*5*/}
-                <div className="form-group">
+                <div className="">
                 <label htmlFor="cuisine">
                 Cuisine
                 </label>
                 
-                <input className="form-group" id="cuisine" name="cuisine"/>
+                <input className="" id="cuisine" name="cuisine"/>
                 </div>
             </div>
             

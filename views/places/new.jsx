@@ -4,67 +4,68 @@ const Def = require('../default')
 function new_form () {
     return (
         <Def>
-          <main>
+          <main style={{ marginLeft: '15px' }}>
             <h1>Add a New Place</h1>
-            <form className="newForm" method="POST" action="/places">
+            <form className="newForm" style={{ marginLeft: '15px' }} method="POST" action="/places">
             
             {/*1*/}
-            <div className="form-group col-sm-4">
+            <div className="" >
             <label htmlFor="name">
             Place Name
             </label>
             
-            <input className="form-control" id="name" name="name" required/>
+            <input className="form-control" style={{ maxWidth: '60%' }} id="name" name="name" required/>
             </div>
 
             {/*2*/}
-            <div className="form-group col-sm-4">
+            <div className="">
             <label htmlFor="pic">
             Place Picture
             </label>
             
-            <input className="form-control" id="pic" name="pic"/>
+            <input className="form-control" style={{ maxWidth: '60%' }} id="pic" name="pic"/>
             </div>
 
             {/*3*/}
-            <div className="form-group col-sm-4">
+            <div className="">
             <label htmlFor="city">
             City
             </label>
             
-            <input className="form-control" id="city" name="city"/>
+            <input className="form-control" style={{ maxWidth: '60%' }} id="city" name="city"/>
             </div>
 
             {/*4*/}
-            <div className="form-group col-sm-4">
+            <div className="">
             <label htmlFor="state">
             State
             </label>
             
-            <input className="form-control" id="state" name="state"/>
+            <input className="form-control" style={{ maxWidth: '60%' }} id="state" name="state"/>
             </div>
 
             {/*5*/}
-            <div className="form-group col-sm-4">
+            <div className="">
             <label htmlFor="cuisine">
             Cuisine
             </label>
             
-            <input className="form-control" id="cuisine" name="cuisine"/>
+            <input className="form-control" style={{ maxWidth: '60%' }} id="cuisine" name="cuisine"/>
             </div>
 
             {/*7*/}
-            <div className="form-group col-sm-4">
+            <div className="">
               <label for="founded">
                 Founded Year
               </label>
 
               <input 
-              className="form-control" 
+              className="" 
               id="founded" 
               name="founded"
               type= "number"
-              value={new Date().getFullYear()} />
+              value={new Date().getFullYear()}  
+              style={{ marginLeft: '5px' }}/>
             </div>
 
             <br />

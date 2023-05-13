@@ -3,7 +3,7 @@ const db = require('../models')
 
 const Places = require('../models/places')
 
-
+//Index
 router.get('/', (req, res) => {
     db.Place.find()
     .then((places) => {
@@ -15,10 +15,8 @@ router.get('/', (req, res) => {
     })
 })
 
-
+//Index POST
 router.post('/', (req, res) => {
-
-
   db.Place.create(req.body)
   .then(() => {
       res.redirect('/places')
@@ -29,8 +27,7 @@ router.post('/', (req, res) => {
   })
 })
 
-
-
+//new
 router.get('/new', (req, res) => {
   res.render('places/new')
 })
@@ -78,7 +75,6 @@ router.delete('/:id', (req, res) => {
 router.get('/:id/edit', (req, res) => {
   res.send('GET edit form stub')
 })
-
 
 
 //comment GET
